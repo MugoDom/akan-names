@@ -1,7 +1,7 @@
-function getDate() {
-    var date = document.getElementById('myCalendar').Value;
-
-    var gender = document.querySelector('input[name=gender]').Value
+function checkDayOfWeek() {
+    var dateString = document.getElementById('myCalendar').value;
+    var dateObject = new Date(dateString)
+    var gender = document.querySelector('input[name="gender"]:checked').value;
     var weekday = new Array(7);
 
     weekday[0] = "Sunday";
@@ -12,7 +12,8 @@ function getDate() {
     weekday[5] = "Friday";
     weekday[6] = "Saturday";
 
-    var day = weekday[dt.getDay()];
+    var day = dateObject.getDay();
+    console.log(day)
 
     var femaleAkan = new Array(7);
     var maleAkan = new Array(7);
@@ -27,24 +28,26 @@ function getDate() {
 
     maleAkan["Sunday"] = "Kwasi";
     maleAkan["Monday"] = "Kwadwo";
-    maleAkan["Tuesday"] = "kwabena";
+    maleAkan["Tuesday"] = "Kwabena";
     maleAkan["Wednesday"] = "Kwaku";
     maleAkan["Thursday"] = "Yaw";
     maleAkan["Friday"] = "Kofi";
     maleAkan["Saturday"] = "Kwame";
 
+    var akanName = "";
+
     // Return Akan name given day and gender
     if (gender === "male"){
         response(maleAkan);
 
-    }
-}elseif (gender === "female"){
+    }else if (gender === "female"){
     response(femaleAkan);
-
 }
 function response(mappedValue){
+    console.log(mappedValue)
     innerDay = weekday[day];
     akanName = mappedValue[innerDay]
-    document.getElementById("result").innerText = "Hi, your Akan name is"+ akanName+ " and you were born on "+ innerDay + "!"
+    document.getElementById("result").innerText = "Hi, your Akan name is "+ akanName+ " and you were born on a "+ innerDay + "!"
 
+}
 }
