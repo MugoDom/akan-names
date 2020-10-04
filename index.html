@@ -12,19 +12,20 @@
 </head>
 
 <body>
+    <div class="container-fluid">
+        <div class="jumbotron">
     <div class="row">
-            <div class="col">
-                <div class="jumbotron">
+        
+            <div class="col-sm-6">
+                
                 <h1 class="header-h1">What's Your Akan Name?</h1>
                 <p class="intro">Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their
                     first name as a 'day name' which corresponds to the day in the week they were born. Play this simple
                     game
                     that tells you, your Akan name. Have fun!</p>
-                </div>
             </div>
        
-        <div class="col">
-            <div class="jumbotron">
+        <div class="col-sm-6">
                 <div class="form-group">
                     <label for="birthDate">Date of Birth</label>
                     <input type="date" id="myCalendar" name="calendar" value="2000-01-01" min="1900-01-01"
@@ -37,13 +38,12 @@
                     <input class="new" type="radio" value="female" id="female" name="gender">
                     <label for="female">Female</label>
 
-                </div> 
+                </div>
 
                 <br>
                 <a href="#result"><button type="button" name="button" class="btn btn-primary mb-2"
                         onclick="checkDayOfWeek();">Reveal Your Akan Name</button></a>
-                <h1 id="result"></h1>
-            </div>
+                <h2 id="result"></h2>
         </div>
         <script src="js/scripts.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -56,6 +56,8 @@
             integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
             crossorigin="anonymous"></script>
 
+    </div>
+    </div>
     </div>
 </body>
 
