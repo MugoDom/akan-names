@@ -35,3 +35,10 @@ function checkDayOfWeek() {
     maleAkan["Saturday"] = "Kwame";
 
     var akanName = "";
+    // Return Akan name given day and gender
+    if (gender === "male"){
+        response(maleAkan);
+
+    }else if (gender === "female"){
+    response(femaleAkan);
+}
