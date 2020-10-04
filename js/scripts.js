@@ -33,3 +33,5 @@ function checkDayOfWeek() {
     maleAkan["Thursday"] = "Yaw";
     maleAkan["Friday"] = "Kofi";
     maleAkan["Saturday"] = "Kwame";
+
+    var akanName = "";
