@@ -42,3 +42,11 @@ function checkDayOfWeek() {
     }else if (gender === "female"){
     response(femaleAkan);
 }
+function response(mappedValue){
+    console.log(mappedValue)
+    innerDay = weekday[day];
+    akanName = mappedValue[innerDay]
+    document.getElementById("result").innerText = "Hi, your Akan name is "+ akanName+ " and you were born on a "+ innerDay + "!"
+
+}
+}
