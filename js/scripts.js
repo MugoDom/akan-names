@@ -11,3 +11,6 @@ function checkDayOfWeek() {
     weekday[4] = "Thursday";
     weekday[5] = "Friday";
     weekday[6] = "Saturday";
+
+    var day = dateObject.getDay();
+    console.log(day)
