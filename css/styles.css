@@ -13,3 +13,11 @@ body{
     padding-top: 20px;
     margin-top: 20px;
 }
+.vl {
+    border-left: 2px solid gray;
+    height: 360px;
+    position: absolute;
+    left: 50%;
+    margin-top: 20px;
+    top: 0;
+  }
