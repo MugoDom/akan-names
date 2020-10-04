@@ -5,4 +5,9 @@
 .intro{
     text-align: left;
     padding: 20px;
+    font-weight: bold;
+}
+body{
+    padding-top: 20px;
+    margin-top: 20px;
 }
