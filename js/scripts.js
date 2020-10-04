@@ -14,3 +14,22 @@ function checkDayOfWeek() {
 
     var day = dateObject.getDay();
     console.log(day)
+
+    var femaleAkan = new Array(7);
+    var maleAkan = new Array(7);
+
+    femaleAkan["Sunday"] = "Akosua";
+    femaleAkan["Monday"] = "Adwoa";
+    femaleAkan["Tuesday"] = "Abenaa";
+    femaleAkan["Wednesday"] = "Akua";
+    femaleAkan["Thursday"] = "Yaa";
+    femaleAkan["Friday"] = "Afua";
+    femaleAkan["Saturday"] = "Ama";
+
+    maleAkan["Sunday"] = "Kwasi";
+    maleAkan["Monday"] = "Kwadwo";
+    maleAkan["Tuesday"] = "Kwabena";
+    maleAkan["Wednesday"] = "Kwaku";
+    maleAkan["Thursday"] = "Yaw";
+    maleAkan["Friday"] = "Kofi";
+    maleAkan["Saturday"] = "Kwame";
